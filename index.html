@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>QQI - Assignment 2</title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/?family=Roboto&display=swap">
+	<!-- 
+	<script>
+	 var trailer = 0;
+	 window.onload = () => {
+	     trailer = document.querySelector(".featured video");
+	     trailer.play();
+	     window.scrollTo(0, 0);
+	 }
+	 window.onscroll = () => {
+	     if (window.scrollY > 100) {
+		 trailer.pause();
+	     } else {
+		 trailer.play();
+	     }	 
+	 }
+	</script>
+	-->
+	
+	<style>
+	 body { margin: 0; font-family: "Roboto", sans-serif; } ul { list-style: none; } li { display: inline-block; padding: 0 1em; } .logo { flex: 1; }
+	 nav { display: flex; width: 100%; height: 80px; background: #9B1818; color: #FFFFFF; align-items: center; box-sizing: border-box; padding: 0 3rem; font-weight: 600; }
+	 .featured {
+	     width: 100%;
+	     height: 700px;
+	     position: relative;
+	 }
+	 @media screen and (min-width: 769px) {
+	     .featured {
+		 height: 700px;
+	     }
+	 }
+	 @media screen and (max-width: 768px) {
+	     .featured {
+		 height: 450px;
+	     }
+	 }
+	 .featured video {
+	     width: 100%;
+	     position: absolute;
+	     z-index: -1;
+	 }
+	 .meta {
+	     position: absolute;
+	     margin-left: 10em;
+	     bottom: 10em;
+	 }
+	 .meta h1 {
+	     color: #FFFFFF;
+	 }
+	 .meta img {
+	     width: 35px;
+	     height: 35px;
+	     position: relative;
+	 }
+	 .meta span {
+	     color: #868686;
+	 }
+	 .btn {
+	     height: 20px;
+	     background: #2396D7;
+	     padding: 1.3em;
+	     border-radius: 2px;
+	     font-weight: 600;
+	     font-size: 16px;
+	     display: flex;
+	     align-items: center;
+	     justify-content: center;
+	     box-sizing: border-box;
+	 }
+	 section {
+	     width: 100%;
+	     background: linear-gradient(#9B1818, #000000);
+
+	     /* use of color attribute in this section is not to remain in the final review!!! */
+	     color: #FFFFFF;
+	     padding: 5em;
+	     box-sizing: border-box;
+	 }
+	 .selection_drop {
+	     padding: 3em 0;
+	 }
+	 .selection_drop select {
+	     appearance: none;
+	     -webkit-appearance: none;
+	     /*
+		select::-ms-expand {
+		display: none;
+		}
+	      */
+	     background: #000000;
+	     color: #FFFFFF;
+	     border: 3px solid #FFFFFF;
+	 }
+	 .showcase {
+	     display: flex;
+	     flex-wrap: wrap;
+	     justify-content: flex-start;
+	 }
+	 .showcase div {
+	     padding: 0 2.5em 0 0;
+	     width: 260px;
+	     min-width: 260px;
+	     text-align: center;
+	 }
+	 .showcase div img {
+	     width: 100%;
+	     height: 360px;
+	 }
+	 .showcase div span {
+	     display: block;
+	     padding: 1.5em;
+	     text-transform: capitalize;
+	 }
+	</style>
+    </head>
+    <body>
+	<div class="top">
+	    <nav>
+		<span class="logo">
+		    Na Scann&#225;in
+		</span>
+		<ul class="nav-pg">
+		    <li>Passes</li>
+		    <li>Locations</li>
+		</ul>
+		<span class="btn">
+		    Book Now
+		</span>
+	    </nav>
+	</div>
+	<div class="featured">
+	    <video src="assets/trailers/gemini_man_trailer.webm" muted=""></video>
+	    <div class="meta">
+		<h1>Gemini Man <img src="assets/vectors/ratings_ifco/12A.png"></h1>
+		<span>An over-the-hill hitman faces off against a younger clone of himself. </span>
+	    </div>
+	</div>
+	<section>
+	    <div class="selection_drop"><span>Showing near</span><select><option value="dundrum">Dundrum</option><option value="swords">Swords</option><option value="gorey">Gorey</option><option value="dungarvan">Dungarvan</option></select></div>
+		<div class="showcase">
+		    
+		</div>
+		<script>
+		 // Get the selection value from the dropdown and fetch the movies based on what the user has selected.
+		 
+		 var selection = document.querySelector(".selection_drop select");
+		 selection.onchange = () => {
+		     console.log(selection.value);
+		 };
+
+		 var showcase = document.querySelector(".showcase");
+
+		 function createMovieTitle(title, vectorName) {
+		     // Instead of React.props, as running a backend for this assignment is not a possible route.
+		     // Use inline functions to pass parameters and render DOM elements.
+		     var a = document.createElement("div"), b = document.createElement("img"), c = document.createElement("div"), d = document.createElement("span"), e = document.createTextNode(title), f = document.createElement("img");
+
+		     // Create image and set src of the image
+		     f.src = "assets/covers/" + vectorName + ".jpg";
+		     
+		     // DOM tree does not allow for modifying the value
+		     // Like a.value = "", solution:
+		     // Append text node to a parent element.
+		     // In this case, append a text node to a span element.
+		     d.append(e);
+		     
+		     // Appending movie title and info...
+		     a.append(f);
+		     a.append(d);
+
+		     // Appending container to <div class="showcase">
+		     
+		     showcase.append(a);
+		 }
+
+		 movieTitles = {
+		     0: {
+			 "id": 123,
+			 "title": "21 Bridges",
+			 "desc": "",
+			 "ageRating": "15A",
+			 "runTime": {
+			     "minutes": 99,
+			 },
+		     },
+		     1: {
+			 "id": 456,
+			 "title": "Abominable",
+			 "desc": "",
+			 "ageRating": "G",
+			 "runTime": {
+			     "minutes": 97,
+			 },
+		     },
+		     2: {
+			 "id": 789,
+			 "title": "Blue Story",
+			 "desc": "",
+			 "ageRating": "16",
+			 "runTime": {
+			     "minutes": 91,
+			 },
+		     },
+		     3: {
+			 "id": "ABC",
+			 "title": "Jumanji: The Next Level",
+			 "desc": "",
+			 "ageRating": "12A",
+			 "runTime": {
+			     "minutes": 123,
+			 },
+		     },
+		     4: {
+			 "id": "DEF",
+			 "title": "Black Christmas",
+			 "desc": 'A group of students are stalked by a stranger during their Christmas break. A remake of the 1974 horror film "Black Christmas".',
+			 "ageRating": "15A",
+			 "runTime": {
+			     "minutes": 98,
+			 },
+		     },
+		     5: {
+			 "id": "GHI",
+			 "title": "The Nightingale",
+			 "desc": "",
+			 "ageRating": "18",
+			 "runTime": {
+			     "minutes": 136,
+			 },
+		     }
+		 };
+
+		 // Length of JSON array
+		 len = Object.keys(movieTitles).length;
+
+		 console.table(movieTitles);
+		 
+		 for (var i = 0; i < len; i++) {
+		     createMovieTitle(movieTitles[i].title, movieTitles[i].id);
+		 };
+		</script>
+	</section>
+	<!--
+	<footer>This is a dyamic web page. Latest movie titles and other information updates through a back-end. Last updated 2 hours ago. <a href="#github">View data sources and source code.</a> </footer>
+	-->
+    </body>
+</html>

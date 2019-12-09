@@ -1,0 +1,7 @@
+Folder structure
+
+images/
+scripts/
+styles/
+
+and so on...
