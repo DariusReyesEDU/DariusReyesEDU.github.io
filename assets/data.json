@@ -1,56 +1,57 @@
-[
-    {
-    "id": 123,
-    "title": "21 Bridges",
-    "desc": "",
-    "ageRating": "15A",
-    "runTime": {
-        "minutes": 99
-        }
-    },
-    {
-    "id": 456,
-    "title": "Abominable",
-    "desc": "",
-    "ageRating": "G",
-    "runTime": {
-        "minutes": 97
-        }
-    },
-    {
-    "id": 789,
-    "title": "Blue Story",
-    "desc": "",
-    "ageRating": "16",
-    "runTime": {
-        "minutes": 91
-        }
-    },
-    {
-    "id": "ABC",
-    "title": "Jumanji: The Next Level",
-    "desc": "",
-    "ageRating": "12A",
-    "runTime": {
-        "minutes": 123
-        }
-    },
-    {
-    "id": "DEF",
-    "title": "Black Christmas",
-    "desc": "A group of students are stalked by a stranger during their Christmas break. A remake of the 1974 horror film \"Black Christmas\".",
-    "ageRating": "15A",
-    "runTime": {
-        "minutes": 98
-        }
-    },
-    {
-    "id": "GHI",
-    "title": "The Nightingale",
-    "desc": "",
-    "ageRating": "18",
-    "runTime": {
-        "minutes": 136
-        }
-    }
-]
+{
+	"movies": [{
+			"id": 123,
+			"title": "21 Bridges",
+			"desc": "",
+			"ageRating": "15A",
+			"runTime": {
+				"minutes": 99
+			}
+		},
+		{
+			"id": 456,
+			"title": "Abominable",
+			"desc": "",
+			"ageRating": "G",
+			"runTime": {
+				"minutes": 97
+			}
+		},
+		{
+			"id": 789,
+			"title": "Blue Story",
+			"desc": "",
+			"ageRating": "16",
+			"runTime": {
+				"minutes": 91
+			}
+		},
+		{
+			"id": "ABC",
+			"title": "Jumanji: The Next Level",
+			"desc": "",
+			"ageRating": "12A",
+			"runTime": {
+				"minutes": 123
+			}
+		},
+		{
+			"id": "DEF",
+			"title": "Black Christmas",
+			"desc": "A group of students are stalked by a stranger during their Christmas break. A remake of the 1974 horror film \"Black Christmas\".",
+			"ageRating": "15A",
+			"runTime": {
+				"minutes": 98
+			}
+		},
+		{
+			"id": "GHI",
+			"title": "The Nightingale",
+			"desc": "",
+			"ageRating": "18",
+			"runTime": {
+				"minutes": 136
+			}
+		}
+	]
+}

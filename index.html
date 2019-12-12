@@ -182,18 +182,20 @@
 		     showcase.append(a);
 		 }
 
-		 fetch("assets/data.json")
+		fetch("assets/data.json")
 			 .then(response => response.json())
-			 .then(json => console.log(json))
+			 .then(json => {
+				 movieTitles = json.movies;
+			 
+		 		// Length of JSON array
+		 		len = Object.keys(movieTitles).length;
 
-		 // Length of JSON array
-		 len = Object.keys(movieTitles).length;
-
-		 console.table(movieTitles);
+		 		console.table(movieTitles);
 		 
-		 for (var i = 0; i < len; i++) {
-		     createMovieTitle(movieTitles[i].title, movieTitles[i].id);
-		 };
+		 		for (var i = 0; i < len; i++) {
+		     		createMovieTitle(movieTitles[i].title, movieTitles[i].id);
+				};
+			});
 		</script>
 	</section>
 	<!--
