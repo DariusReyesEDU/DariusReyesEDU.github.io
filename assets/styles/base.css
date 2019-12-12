@@ -29,7 +29,7 @@ body {
      justify-content: center;
      align-items: center;
      width: 100%;
-     background: url("../../assets/images/vectors/extra.png") #9C1717 no-repeat;
+     background: url("/assets/images/vectors/extra.png") #9C1717 no-repeat;
      background-size: 30% 100%;
      background-position: 30vw;
      border-radius: 10px;
