@@ -1,0 +1,27 @@
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    padding: 2vw;
+}
+form div {
+    flex: 1;
+    margin: 1vw 0;
+}
+form div label {
+    color: #FFFFFF;
+    font-size: 1.3em;
+}
+form div select, form div input {
+    width: 100%;
+    border: 2px solid #FFFFFF;
+    display: inline-block;
+    padding: 1.3em 0;
+}

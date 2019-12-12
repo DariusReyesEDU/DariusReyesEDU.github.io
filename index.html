@@ -3,8 +3,8 @@
     <head>
 	<title>QQI - Assignment 2</title>
 	<meta charset="UTF-8"/>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/?family=Roboto&display=swap">
 	<link rel="stylesheet" href="./assets/styles/base.css">
+	<link rel="stylesheet" href="./assets/styles/index.css">
 	<!-- 
 	<script>
 	 var trailer = 0;
@@ -22,98 +22,9 @@
 	 }
 	</script>
 	-->
-	
-	<style>
-	 body { margin: 0; font-family: "Roboto", sans-serif; background: #141414; }
-
-	 .featured {
-	     width: 100%;
-	     height: 45vw;
-	     position: relative;
-	 }
-	 .featured .gradient {
-		 width: 100%;
-		 height: 100%;
-		 position: absolute;
-		 z-index: -1;
-		 background: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,1) 99.5%)
-	 }
-	 .featured video {
-		position: absolute;
-  		width: 100%;
-  		height: auto;
-  		z-index: -2;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-	 }
-	 .meta {
-	     position: absolute;
-	     margin-left: 10em;
-	     bottom: 10em;
-		 z-index: 0;
-	 }
-	 .meta h1 {
-	     color: #FFFFFF;
-	 }
-	 .meta img {
-	     width: 35px;
-	     height: 35px;
-	     position: relative;
-	 }
-	 .meta span {
-	     color: #868686;
-	 }
-	
-	 section {
-	     width: 100%;
-	     background: linear-gradient(#000000, #141414);
-
-	     /* use of color attribute in this section is not to remain in the final review!!! */
-	     color: #FFFFFF;
-	     padding: 5em;
-	     box-sizing: border-box;
-	 }
-	 .selection_drop {
-	     padding: 3em 0;
-	 }
-	 .selection_drop select {
-	     appearance: none;
-	     -webkit-appearance: none;
-	     /*
-		select::-ms-expand {
-		display: none;
-		}
-	      */
-	     background: #000000;
-	     color: #FFFFFF;
-	     border: 3px solid #FFFFFF;
-	 }
-	 .showcase {
-	     display: flex;
-	     flex-wrap: wrap;
-	     justify-content: flex-start;
-	 }
-	 .showcase div {
-	     padding: 0 2.5em 0 0;
-	     width: 260px;
-	     min-width: 260px;
-	     text-align: center;
-	 }
-	 .showcase div img {
-	     width: 100%;
-	     height: 360px;
-	 }
-	 .showcase div span {
-	     display: block;
-	     padding: 1.5em;
-	     text-transform: capitalize;
-	 }
-	</style>
     </head>
     <body>
-	<div class="nav">
+	<div class="nav--fixed nav">
 	    <span class="logo">
 		<svg width="41" height="38" viewBox="0 0 41 38" fill="none" xmlns="http://www.w3.org/2000/svg">
 		    <path d="M0 19H40" stroke="white"/>
@@ -176,7 +87,7 @@
 		     showcase.append(a);
 		 }
 
-		fetch("assets/data.json")
+		fetch("http://DariusReyesEDU.github.io/assets/data.json")
 			 .then(response => response.json())
 			 .then(json => {
 				 movieTitles = json.movies;
@@ -192,8 +103,5 @@
 			});
 		</script>
 	</section>
-	<!--
-	<footer>This is a dyamic web page. Latest movie titles and other information updates through a back-end. Last updated 2 hours ago. <a href="#github">View data sources and source code.</a> </footer>
-	-->
     </body>
 </html>

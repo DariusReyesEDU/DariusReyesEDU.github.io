@@ -4,41 +4,55 @@
 
 body {
     background: #141414;
-}
-.nav { display: flex; width: 100vw; height: 80px; font-family: "Roboto", sans-serif; color: #FFFFFF; align-items: center; position: fixed; box-sizing: border-box; padding: 0 3rem; font-size: 14px; font-weight: 600; z-index: 1; }
-.btn {
-	     height: 20px;
-	     background: #9C1717;
-	     padding: 1.3em;
-	     border-radius: 2px;
-	     font-weight: 500;
-	     display: flex;
-	     align-items: center;
-	     justify-content: center;
-	     box-sizing: border-box;
-	 }
- a { text-decoration: none; color: unset; } a:hover { text-decoration: underline; }
- .nav-pg { display: flex; justify-content: center; align-items: center; flex: 1; }
- .nav ul { list-style: none; } .nav li { display: inline-block; padding: 0 1em; } 
+    font-family: "Roboto", sans-serif;
+    margin: 0;
 
- .banner {
-     padding: 10vw;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     width: 100%;
-     background: url("../images/vectors/extra.png") #9C1717 no-repeat;
-     background-size: 30% 100%;
-     background-position: 30vw;
-     border-radius: 10px;
-     box-sizing: border-box;
-     flex-direction: column;
-     font-family: "Roboto", sans-serif;
- }
- .banner h2 {
-     color: #FFFFFF;
-     margin: 0;
- }
- .banner span {
-     font-variant: small-caps;
- }
+    /* remove in final commit */
+    overflow-x: hidden;
+}
+.nav { display: flex; width: 100vw; font-family: "Roboto", sans-serif; color: #FFFFFF; align-items: center; position: relative; box-sizing: border-box; padding: 2vw 3vw; font-size: 1em; font-weight: 600; z-index: 1; }
+.nav--fixed { position: fixed; }
+.btn {
+    height: 20px;
+    background: #9C1717;
+    padding: 1.3em;
+    border-radius: 2px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+a { text-decoration: none; color: unset; } a:hover { text-decoration: underline; }
+.nav-pg { display: flex; justify-content: center; align-items: center; flex: 1; }
+.nav ul { list-style: none; } .nav li { display: inline-block; padding: 0 1em; } 
+
+section .title {
+    text-align: center;
+    font-size: 2em;
+    color: #FFFFFF;
+}
+
+.banner {
+    padding: 10vw 0;
+    margin: 5vw 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    background: url("../images/vectors/extra.png") #9C1717 no-repeat;
+    background-size: 30% 100%;
+    background-position: 45vw;
+    box-sizing: border-box;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    color: #FFFFFF;
+}
+.banner h2 {
+    color: #FFFFFF;
+    margin: 0;
+    font-size: 3em;
+}
+.banner span {
+    font-variant: small-caps;
+}

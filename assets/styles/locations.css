@@ -1,0 +1,38 @@
+.localCon {
+    width: 100%;
+    color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+}
+.localOne {
+    padding: 2vw;
+    margin: 2vw;
+    background: #000000;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.localOne, .localOne * {
+    box-sizing: border-box;
+}
+.localDesc {
+    flex: 1;
+    padding: 5vw;
+}
+.localOne img {
+    width: 50%;
+    height: 500px;
+}
+.localDesc h3, .localDesc .addr {
+    margin: 0;
+    font-variant: small-caps;
+}
+.localDesc h3 {
+    font-size: 1.4em;
+}
+.localDesc .addr {
+    font-size: 1em;
+}
+.localDesc .btn {
+    margin: 3vw;
+}

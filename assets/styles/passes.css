@@ -1,0 +1,46 @@
+.passItm, .passItm * {
+    box-sizing: border-box;
+}
+.passItm {
+    display: flex;
+    width: 100%;
+    padding: 5vw;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.passCon {
+    background: #000000;
+    margin: 2vw;
+    padding: 3vw;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #FFFFFF;
+}
+.passCon h3 {
+    font-size: 3em;
+    text-align: center;
+}
+.passCon svg {
+    width: 100%;
+    padding: 2vw;
+}
+.passCon .price {
+    font-size: 2.5em;
+}
+.passCon .subtext {
+    font-size: 2em;
+}
+@media screen and (max-width: 1080px) and (orientation: portrait) {
+    .passCon {
+	min-width: 100%;
+	width: auto;
+    }
+}
+@media screen and (min-width: 768px) and (orientation: landscape) {
+    .passCon {
+	width: 20%;
+    }
+}
+
