@@ -1,0 +1,47 @@
+<html>
+    <style>
+     form input[type=radio] {
+	 display: none;
+     }
+
+     input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+	 -webkit-appearance: none;
+	 margin: 0;
+     }
+     form input[type=number] {
+	 -moz-appearance: textfield;
+     }
+     
+     
+     img {
+	 width: 240px;
+	 height: 360px;
+     }
+     img:active, img:visited {
+	 border: 2px solid blue;
+     }
+    </style>
+    <h3>Bookings</h3>
+    <!-- Dialog -->
+    <div>
+	<!-- Are you currently a Showtime pass holder? If no, redirect to passes else continue with form -->
+    </div>
+    <form>
+	<input type="radio" name="movie" value="X" id="movie1">
+	<label class="label" for="movie1"><img src="../assets/images/covers/ABC.jpg"></label>
+	
+	<input type="radio" name="movie" value="Y" id="movie2">
+	<label class="label" for="movie2"><img src="../assets/images/covers/DEF.jpg"></label>
+	<hr/>
+	<input type="radio" name="movie" value="X" id="food1">
+	<label class="label" for="food1"><img src="../assets/images/covers/ABC.jpg"></label>
+	
+	<input type="radio" name="movie" value="Y" id="food2">
+	<label class="label" for="food2"><img src="../assets/images/covers/DEF.jpg"></label>
+    </form>
+	<script>
+	 document.querySelector("form").onchange = (e) => {
+	     console.log(e);
+	 }
+	</script>
+</html>
