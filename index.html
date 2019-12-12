@@ -23,35 +23,36 @@
 	-->
 	
 	<style>
-	 body { margin: 0; font-family: "Roboto", sans-serif; } ul { list-style: none; } li { display: inline-block; padding: 0 1em; } .logo { flex: 1; }
-	 nav { display: flex; width: 100%; height: 80px; background: #9B1818; color: #FFFFFF; align-items: center; box-sizing: border-box; padding: 0 3rem; font-weight: 600; }
+	 body { margin: 0; font-family: "Roboto", sans-serif; background: #141414; } ul { list-style: none; } a { text-decoration: none; color: unset; } a:hover { text-decoration: underline; } li { display: inline-block; padding: 0 1em; } .nav-pg { display: flex; justify-content: center; align-items: center; flex: 1;}
+	 nav { display: flex; width: 100vw; height: 80px; color: #FFFFFF; align-items: center; position: fixed; box-sizing: border-box; padding: 0 3rem; font-size: 14px; font-weight: 600; z-index: 1; }
 	 .featured {
 	     width: 100%;
-	     height: 700px;
+	     height: 45vw;
 	     position: relative;
 	 }
-	 @media screen and (min-width: 769px) {
-	     .featured {
-		 height: 700px;
-	     }
-	 }
-	 @media screen and (max-width: 768px) {
-	     .featured {
-		 height: 450px;
-	     }
+	 .featured .gradient {
+		 width: 100%;
+		 height: 100%;
+		 position: absolute;
+		 z-index: -1;
+		 background: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,1) 99.5%)
 	 }
 	 .featured video {
-	     min-width: 100%;
-	     min-height: 100%;
-	     height: auto;
-	     width: auto;
-	     position: absolute;
-	     z-index: -1;
+		position: absolute;
+  		width: 100%;
+  		height: auto;
+  		z-index: -2;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		transform: scale(1.8);
 	 }
 	 .meta {
 	     position: absolute;
 	     margin-left: 10em;
 	     bottom: 10em;
+		 z-index: 0;
 	 }
 	 .meta h1 {
 	     color: #FFFFFF;
@@ -66,11 +67,10 @@
 	 }
 	 .btn {
 	     height: 20px;
-	     background: #2396D7;
+	     background: #9C1717;
 	     padding: 1.3em;
 	     border-radius: 2px;
-	     font-weight: 600;
-	     font-size: 16px;
+	     font-weight: 500;
 	     display: flex;
 	     align-items: center;
 	     justify-content: center;
@@ -78,7 +78,7 @@
 	 }
 	 section {
 	     width: 100%;
-	     background: linear-gradient(#9B1818, #000000);
+	     background: linear-gradient(#000000, #141414);
 
 	     /* use of color attribute in this section is not to remain in the final review!!! */
 	     color: #FFFFFF;
@@ -123,30 +123,28 @@
 	</style>
     </head>
     <body>
-	<div class="top">
-	    <nav>
+	<nav>
 		<span class="logo">
-		    Na Scann&#225;in
+		    Showtime
 		</span>
 		<ul class="nav-pg">
-		    <li>Passes</li>
-		    <li>Locations</li>
+			<li><a href="#now-showing">What's On</a></li>
+		    <li><a href="/passes">Passes</a></li>
+		    <li><a href="/locations">Locations</a></li>
 		</ul>
-		<span class="btn">
-		    Book Now
-		</span>
-	    </nav>
-	</div>
+		<span class="btn"><a href="/booking">Quick Book</a></span>
+	</nav>
 	<div class="featured">
-	    <video src="assets/trailers/gemini_man_trailer.webm" muted=""></video>
-	    <div class="meta">
-		<h1>Gemini Man <img src="assets/images/vectors/ratings_ifco/12A.png"></h1>
-		<span>An over-the-hill hitman faces off against a younger clone of himself. </span>
-	    </div>
+		<div class="meta">
+			<h1>21 Bridges<img src="assets/images/vectors/ratings_ifco/15A.png"></h1>
+			<span>An embattled NYPD detective is thrust into a citywide manhunt for a pair of cop killers after uncovering a massive and unexpected conspiracy.</span>
+		</div>
+		<div class="gradient"></div>
+	    <video src="assets/trailers/21.mp4" autoplay="" loop="" muted=""></video>
 	</div>
 	<section>
 	    <div class="selection_drop"><span>Showing near</span><select><option value="dundrum">Dundrum</option><option value="swords">Swords</option><option value="gorey">Gorey</option><option value="dungarvan">Dungarvan</option></select></div>
-		<div class="showcase">
+		<div id="now-showing" class="showcase">
 		    
 		</div>
 		<script>
