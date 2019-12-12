@@ -1,0 +1,19 @@
+/* Fixed style for certain elements across all pages */
+
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+nav { display: flex; width: 100vw; height: 80px; font-family: "Roboto", sans-serif; color: #FFFFFF; align-items: center; position: fixed; box-sizing: border-box; padding: 0 3rem; font-size: 14px; font-weight: 600; z-index: 1; }
+.btn {
+	     height: 20px;
+	     background: #9C1717;
+	     padding: 1.3em;
+	     border-radius: 2px;
+	     font-weight: 500;
+	     display: flex;
+	     align-items: center;
+	     justify-content: center;
+	     box-sizing: border-box;
+	 }
+ a { text-decoration: none; color: unset; } a:hover { text-decoration: underline; }
+ .nav-pg { display: flex; justify-content: center; align-items: center; flex: 1; }
+ ul { list-style: none; } li { display: inline-block; padding: 0 1em; } 

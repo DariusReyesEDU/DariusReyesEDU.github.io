@@ -1,0 +1,1 @@
+nav { display: flex; width: 100vw; height: 80px; color: #FFFFFF; align-items: center; position: fixed; box-sizing: border-box; padding: 0 3rem; font-size: 14px; font-weight: 600; z-index: 1; }
