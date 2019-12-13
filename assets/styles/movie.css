@@ -3,14 +3,19 @@ body {
     background-repeat: no-repeat;
 }
 .movie-select {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     background: #9C1717;
     color: #FFFFFF;
     margin: 10vw 20vw;
     padding: 5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .movie-ftrs {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .feature {
