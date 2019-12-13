@@ -1,3 +1,15 @@
+@media screen and (max-width: 768px) {
+    .localOne img {
+	width: 20%;
+	height: 30%;
+    }
+}
+@media screen and (min-width: 769px) {
+    .localOne img {
+	width: 50%;
+	height: 500px;
+    }
+}
 .localCon {
     width: 100%;
     color: #FFFFFF;
@@ -18,10 +30,6 @@
 .localDesc {
     flex: 1;
     padding: 5vw;
-}
-.localOne img {
-    width: 50%;
-    height: 500px;
 }
 .localDesc h3, .localDesc .addr {
     margin: 0;

@@ -1,0 +1,25 @@
+body {
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.movie-select {
+    box-sizing: border-box;
+    background: #9C1717;
+    color: #FFFFFF;
+    margin: 10vw 20vw;
+    padding: 5vw;
+    display: flex;
+}
+.movie-ftrs {
+    display: flex;
+}
+.feature {
+    width: 100px;
+    margin-right: 1vw;
+    text-align: center;
+}
+.feature img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}

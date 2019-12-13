@@ -1,57 +1,87 @@
 {
-	"movies": [{
-			"id": 123,
-			"title": "21 Bridges",
-			"desc": "",
-			"ageRating": "15A",
-			"runTime": {
-				"minutes": 99
-			}
-		},
-		{
-			"id": 456,
-			"title": "Abominable",
-			"desc": "",
-			"ageRating": "G",
-			"runTime": {
-				"minutes": 97
-			}
-		},
-		{
-			"id": 789,
-			"title": "Blue Story",
-			"desc": "",
-			"ageRating": "16",
-			"runTime": {
-				"minutes": 91
-			}
-		},
-		{
-			"id": "ABC",
-			"title": "Jumanji: The Next Level",
-			"desc": "",
-			"ageRating": "12A",
-			"runTime": {
-				"minutes": 123
-			}
-		},
-		{
-			"id": "DEF",
-			"title": "Black Christmas",
-			"desc": "A group of students are stalked by a stranger during their Christmas break. A remake of the 1974 horror film \"Black Christmas\".",
-			"ageRating": "15A",
-			"runTime": {
-				"minutes": 98
-			}
-		},
-		{
-			"id": "GHI",
-			"title": "The Nightingale",
-			"desc": "",
-			"ageRating": "18",
-			"runTime": {
-				"minutes": 136
-			}
-		}
-	]
+    "movies": [{
+	"id": 123,
+	"title": "21 Bridges",
+	"desc": "An embattled NYPD detective is thrust into a citywide manhunt for a pair of cop killers after uncovering a massive and unexpected conspiracy.",
+	"ageRating": "15A",
+	"stars": [
+	    {
+		"name": "Chadwick Boseman",
+		"image": "cb.jpg"
+	    },
+	    {
+		"name": "J.K. Simmons",
+		"image": "jk.jpg"
+	    }
+	],
+	"runTime": {
+	    "minutes": 99
+	}
+    },
+	       {
+		   "id": 456,
+		   "title": "Abominable",
+		   "desc": "Three teenagers must help a Yeti return to his family while avoiding a wealthy man and a zoologist who want it for their own needs.",
+		   "ageRating": "G",
+		   "stars": [
+	    {
+		"name": "Chloe Bennet",
+		"image": "chleb.jpg"
+	    },
+	    {
+		"name": "Sarah Paulson",
+		"image": "sp.jpg"
+	    }
+	],
+		   "runTime": {
+		       "minutes": 97
+		   }
+	       },
+	       {
+		   "id": 789,
+		   "title": "Blue Story",
+		   "desc": "",
+		   "ageRating": "16",
+		   "runTime": {
+		       "minutes": 91
+		   }
+	       },
+	       {
+		   "id": "ABC",
+		   "title": "Jumanji: The Next Level",
+		   "desc": "",
+		   "ageRating": "12A",
+		   "runTime": {
+		       "minutes": 123
+		   }
+	       },
+	       {
+		   "id": "DEF",
+		   "title": "Black Christmas",
+		   "desc": "A group of students are stalked by a stranger during their Christmas break. A remake of the 1974 horror film \"Black Christmas\".",
+		   "ageRating": "15A",
+		   "stars": [
+		       {
+			   "name": "Chloe Bennet",
+			   "image": "chleb.jpg"
+		       },
+		       {
+			   "name": "J.K. Simmons",
+			   "image": "jk.jpg"
+		       }
+		   ],
+		   "runTime": {
+		       "minutes": 98
+		   }
+	       },
+	       {
+		   "id": "GHI",
+		   "title": "The Nightingale",
+		   "desc": "",
+		   "ageRating": "18",
+		   "runTime": {
+		       "minutes": 136
+		   }
+	       }
+	      ]
 }

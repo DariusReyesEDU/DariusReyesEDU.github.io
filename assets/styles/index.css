@@ -1,6 +1,33 @@
+@media screen and (max-width: 768px) {
+    .meta {
+	bottom: 2em;
+    }
+    .meta h1 {
+	padding-top: 3vw;
+	font-size: 1em;
+    }
+    .meta span {
+	display: none;
+    }
+    section {
+	padding: 0 2em;
+    }
+}
+@media screen and (min-width: 769px) {
+    .meta {
+	bottom: 5em;
+    }
+    .meta h1 {
+	font-size: 2.2em;
+    }
+    section {
+	padding: 0 5em;
+    }
+}
+
 .featured {
     width: 100%;
-    height: 45vw;
+    height: 40vw;
     position: relative;
 }
 .featured .gradient {
@@ -23,51 +50,52 @@
 .meta {
     position: absolute;
     margin-left: 10em;
-    bottom: 10em;
+    width: 33.5%;
     z-index: 0;
 }
 .meta h1 {
     color: #FFFFFF;
+    display: flex;
 }
 .meta img {
-    width: 35px;
-    height: 35px;
+    width: 1.2em;
+    height: 1.2em;
     position: relative;
+    display: inline-flex;
+    margin-left: 1vw;
 }
 .meta span {
-    color: #868686;
+    color: #FFFFFF;
+    font-size: 1.4em;
+    word-break: break-word;
 }
 
 section {
     width: 100%;
-    background: linear-gradient(#000000, #141414);
+    background: #000000;
     color: #FFFFFF;
-    padding: 5em;
     box-sizing: border-box;
 }
 .selection_drop {
     padding: 3em 0;
 }
-.selection_drop span {
+.selection_drop span, .selection_drop select {
     font-size: 1em;
-    margin: 0 1vw;
 }
 .selection_drop select {
     appearance: none;
     -webkit-appearance: none;
     background: #000000;
     color: #FFFFFF;
-    border: 3px solid #FFFFFF;
+    border: 0;
     padding: 0.5vw;
-    font-size: 0.9em;
-}
-.seleciton_drop::-ms-expand {
-    display: none;
+    text-decoration: underline;
 }
 .showcase {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    padding: 1em;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 .showcase div {
     padding: 0 2.5em 0 0;
@@ -75,8 +103,8 @@ section {
     text-align: center;
     flex: 1;
 }
-.showcase div:last-child {
-    flex: 0.1;
+.showcase div:hover {
+    transform: scale(1.1);
 }
 .showcase div img {
     width: 100%;

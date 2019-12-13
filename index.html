@@ -3,25 +3,9 @@
     <head>
 	<title>QQI - Assignment 2</title>
 	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="./assets/styles/base.css">
 	<link rel="stylesheet" href="./assets/styles/index.css">
-	<!-- 
-	<script>
-	 var trailer = 0;
-	 window.onload = () => {
-	     trailer = document.querySelector(".featured video");
-	     trailer.play();
-	     window.scrollTo(0, 0);
-	 }
-	 window.onscroll = () => {
-	     if (window.scrollY > 100) {
-		 trailer.pause();
-	     } else {
-		 trailer.play();
-	     }	 
-	 }
-	</script>
-	-->
     </head>
     <body>
 	<div class="nav--fixed nav">
@@ -31,8 +15,6 @@
 		    <path d="M6.33594 10.3887C6.33594 10.0013 6.19922 9.70508 5.92578 9.5C5.65234 9.29036 5.16016 9.07161 4.44922 8.84375C3.73828 8.61133 3.17546 8.38346 2.76074 8.16016C1.63053 7.54948 1.06543 6.72689 1.06543 5.69238C1.06543 5.15462 1.21582 4.67611 1.5166 4.25684C1.82194 3.83301 2.25716 3.5026 2.82227 3.26562C3.39193 3.02865 4.02995 2.91016 4.73633 2.91016C5.44727 2.91016 6.08073 3.04004 6.63672 3.2998C7.19271 3.55501 7.62337 3.91732 7.92871 4.38672C8.23861 4.85612 8.39355 5.38932 8.39355 5.98633H6.34277C6.34277 5.5306 6.19922 5.17741 5.91211 4.92676C5.625 4.67155 5.22168 4.54395 4.70215 4.54395C4.20085 4.54395 3.8112 4.65104 3.5332 4.86523C3.25521 5.07487 3.11621 5.35286 3.11621 5.69922C3.11621 6.02279 3.27799 6.29395 3.60156 6.5127C3.92969 6.73145 4.41048 6.93652 5.04395 7.12793C6.21061 7.47884 7.06055 7.91406 7.59375 8.43359C8.12695 8.95312 8.39355 9.60026 8.39355 10.375C8.39355 11.2363 8.06771 11.9131 7.41602 12.4053C6.76432 12.8929 5.88704 13.1367 4.78418 13.1367C4.01855 13.1367 3.32129 12.9977 2.69238 12.7197C2.06348 12.4372 1.58268 12.0521 1.25 11.5645C0.921875 11.0768 0.757812 10.5117 0.757812 9.86914H2.81543C2.81543 10.9674 3.47168 11.5166 4.78418 11.5166C5.27181 11.5166 5.65234 11.4186 5.92578 11.2227C6.19922 11.0221 6.33594 10.7441 6.33594 10.3887ZM17.8887 13H15.8379V8.73438H11.8389V13H9.78809V3.04688H11.8389V7.08008H15.8379V3.04688H17.8887V13ZM27.8623 8.24902C27.8623 9.22884 27.6891 10.0879 27.3428 10.8262C26.9964 11.5645 26.4997 12.1341 25.8525 12.5352C25.21 12.9362 24.4717 13.1367 23.6377 13.1367C22.8128 13.1367 22.0768 12.9385 21.4297 12.542C20.7826 12.1455 20.2812 11.5804 19.9258 10.8467C19.5703 10.1084 19.3903 9.26074 19.3857 8.30371V7.81152C19.3857 6.83171 19.5612 5.97038 19.9121 5.22754C20.2676 4.48014 20.7666 3.9082 21.4092 3.51172C22.0563 3.11068 22.7946 2.91016 23.624 2.91016C24.4535 2.91016 25.1895 3.11068 25.832 3.51172C26.4792 3.9082 26.9782 4.48014 27.3291 5.22754C27.6846 5.97038 27.8623 6.82943 27.8623 7.80469V8.24902ZM25.7842 7.79785C25.7842 6.75423 25.5973 5.96126 25.2236 5.41895C24.8499 4.87663 24.3167 4.60547 23.624 4.60547C22.9359 4.60547 22.4049 4.87435 22.0312 5.41211C21.6576 5.94531 21.4684 6.72917 21.4639 7.76367V8.24902C21.4639 9.2653 21.6507 10.0537 22.0244 10.6143C22.3981 11.1748 22.9359 11.4551 23.6377 11.4551C24.3258 11.4551 24.8545 11.1862 25.2236 10.6484C25.5928 10.1061 25.7796 9.31771 25.7842 8.2832V7.79785ZM37.1045 10.1289L38.4443 3.04688H40.4883L38.2803 13H36.2158L34.5957 6.3418L32.9756 13H30.9111L28.7031 3.04688H30.7471L32.0938 10.1152L33.7344 3.04688H35.4707L37.1045 10.1289Z" fill="white"/>
 		    <path d="M12.4336 26.708H9.38477V35H7.33398V26.708H4.32617V25.0469H12.4336V26.708ZM15.79 35H13.7393V25.0469H15.79V35ZM20.377 25.0469L22.9336 32.2656L25.4766 25.0469H28.1699V35H26.1123V32.2793L26.3174 27.583L23.6309 35H22.2227L19.543 27.5898L19.748 32.2793V35H17.6973V25.0469H20.377ZM35.9492 30.6865H32.0117V33.3525H36.6328V35H29.9609V25.0469H36.6191V26.708H32.0117V29.0801H35.9492V30.6865Z" fill="white"/>
 		</svg>
-
-
 	    </span>
 	    <ul class="nav-pg">
 		<li><a href="#now-showing">What's On</a></li>
@@ -64,24 +46,24 @@
 
 		 var showcase = document.querySelector(".showcase");
 
-		 function createMovieTitle(title, vectorName) {
+		 function createMovieTitle(movie) {
 		     // Instead of React.props, as running a backend for this assignment is not a possible route.
 		     // Use inline functions to pass parameters and render DOM elements.
-		     var a = document.createElement("div"), b = document.createElement("img"), c = document.createElement("div"), d = document.createElement("span"), e = document.createTextNode(title), f = document.createElement("img");
+		     var a = document.createElement("div"), b = document.createElement("img"), c = document.createElement("div"), d = document.createElement("a"), f = document.createElement("img");
 
 		     // Create image and set src of the image
-		     f.src = "assets/images/covers/" + vectorName + ".jpg";
-		     
-		     // DOM tree does not allow for modifying the value
-		     // Like a.value = "", solution:
-		     // Append text node to a parent element.
-		     // In this case, append a text node to a span element.
-		     d.append(e);
-		     
-		     // Appending movie title and info...
-		     a.append(f);
-		     a.append(d);
+		     f.src = "assets/images/covers/" + movie + ".jpg";
 
+		     // Appending movie cover and redirect...
+		     if (movie == 123 || movie == 456) {
+			 d.href = "movies/"+movie;
+			 d.setAttribute("class", "redir");
+			 d.append(f);
+			 a.append(d);
+		     } else {
+			 a.append(f);
+		     }
+		     		     
 		     // Appending container to <div class="showcase">
 		     
 		     showcase.append(a);
@@ -98,7 +80,7 @@
 		 		console.table(movieTitles);
 		 
 		 		for (var i = 0; i < len; i++) {
-		     		createMovieTitle(movieTitles[i].title, movieTitles[i].id);
+		     		    createMovieTitle(movieTitles[i].id);
 				};
 			});
 		</script>

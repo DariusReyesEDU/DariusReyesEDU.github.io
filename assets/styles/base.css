@@ -2,15 +2,41 @@
 
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
+@media screen and (max-width: 768px) {
+    .nav {
+	font-size: 0.75em;
+	padding: 0.5vw;
+    }
+    .nav svg {
+	display: none;
+    }
+    .banner {
+	background-position: 40% 100%;
+    }
+    .banner h2 {
+	font-size: 2em;
+    }
+}
+@media screen and (min-width: 769px) {
+    .nav {
+	font-size: 0.9em;
+	padding: 1vw 2vw;
+    }
+    .banner {
+	background-position: 30% 100%;
+    }
+    .banner h2 {
+	font-size: 3em;
+    }
+}
+
 body {
     background: #141414;
     font-family: "Roboto", sans-serif;
     margin: 0;
-
-    /* remove in final commit */
     overflow-x: hidden;
 }
-.nav { display: flex; width: 100vw; font-family: "Roboto", sans-serif; color: #FFFFFF; align-items: center; position: relative; box-sizing: border-box; padding: 2vw 3vw; font-size: 1em; font-weight: 600; z-index: 1; }
+.nav { display: flex; width: 100vw; font-family: "Roboto", sans-serif; color: #FFFFFF; align-items: center; position: relative; box-sizing: border-box; font-weight: 600; z-index: 1; }
 .nav--fixed { position: fixed; }
 .btn {
     height: 20px;
@@ -24,7 +50,7 @@ body {
     box-sizing: border-box;
 }
 a { text-decoration: none; color: unset; } a:hover { text-decoration: underline; }
-.nav-pg { display: flex; justify-content: center; align-items: center; flex: 1; }
+.nav-pg { display: flex; justify-content: flex-start; align-items: center; flex: 1; }
 .nav ul { list-style: none; } .nav li { display: inline-block; padding: 0 1em; } 
 
 section .title {
@@ -41,7 +67,6 @@ section .title {
     align-items: center;
     width: auto;
     background: url("../images/vectors/extra.png") #9C1717 no-repeat;
-    background-size: 30% 100%;
     background-position: 45vw;
     box-sizing: border-box;
     flex-direction: column;
@@ -51,7 +76,6 @@ section .title {
 .banner h2 {
     color: #FFFFFF;
     margin: 0;
-    font-size: 3em;
 }
 .banner span {
     font-variant: small-caps;
