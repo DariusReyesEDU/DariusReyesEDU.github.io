@@ -13,9 +13,8 @@
     
     var body = document.querySelector("body"), movieContain = document.querySelector(".movie-select"), movieInfo = document.querySelector(".movie-info"), movieTitle = document.querySelector(".movie-info h2"), movieSyp = document.querySelector(".movie-info .syp"), movieFeat = document.querySelector(".movie-info .movie-ftrs"), runTime = document.querySelector(".runtime");
     
-    //    fetch("https://DariusReyesEDU.github.io/assets/data.json")
-    fetch("http://sorryboss:5000/DariusReyesEDU.github.io/assets/data.json")
-	.then(response => response.json())
+    fetch("https://DariusReyesEDU.github.io/assets/data.json")
+    	.then(response => response.json())
 	.then(json => {
 	    movie = json.movies[movieIndex[path]];
 
